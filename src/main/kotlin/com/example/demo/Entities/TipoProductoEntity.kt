@@ -1,16 +1,16 @@
 package com.example.demo.Entities
 
 import jakarta.persistence.*
-import java.util.Date
+import java.util.*
+
 @Entity
-@Table(name = "CAT_BULLSOFT_SEXO")
-data class SexoEntity(
+@Table(name ="CAT_BULLSOFT_TIPO_PRODUCTO")
+class TipoProductoEntity (
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        val idSexo: Long,
-        val sexo: String,
+        val idTipoProducto: Long,
+        val tipo: String,
         val fechaAlta: Date,
         val fechaBaja: Date,
         val activo: Boolean
 )
-
